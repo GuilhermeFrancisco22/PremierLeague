@@ -110,22 +110,23 @@ section {
   background-color: white;
   padding: 1rem;
   text-align: center;
-  height: 500px;
-  width: 300px;
+  height: 400px;
+  width: 250px;
   margin: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.952);
   transition: transform 0.3s ease-in-out;
   border-radius: 20px;
-  border: 2px solid #ff6600;
+  border: 3px solid #ff6600;
   animation: fadeIn 6s ease-in;
 }
 .img:hover {
   transform: scale(1.12);
   background-color: rgb(189, 189, 189);
+  border: 4px solid rgb(255, 43, 43);
 }
 /* Estilizando a div de name */
 .name {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #ff6600;
   font-weight: bold;
   margin-top: 10px;
