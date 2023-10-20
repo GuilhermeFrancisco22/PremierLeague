@@ -69,6 +69,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  
 }
 
 /* Estilo para as imagens */
@@ -79,6 +80,13 @@ section {
   transition: transform 0.3s ease-in-out;
   border: 2px solid #ff6600;
   margin-top: 20px;
+  width: calc(75% / 4);
+
+
+}
+.img >img{
+  width: 100%;
+
 }
 
 .img:hover {
