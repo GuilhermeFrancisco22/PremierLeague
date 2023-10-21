@@ -1,13 +1,13 @@
-const url = "https://dummyjson.com/products";
+const url = "https://receitas-lkkr.onrender.com/categories";
 const imageContainer = document.getElementById("image-container");
 
 fetch(url, { method: "get" })
   .then((result) => result.json())
-  .then((data) => tratamentoDeDados(data));
+  .then((data) => tratamentoDeDados(data.data));
 
 function tratamentoDeDados(data) {
   //aqui vc manda o caminho para API
-  data.products.forEach((element) => {
+  data.categories.forEach((element) => {
     // Crie um elemento div para cada imagem
     const imageDiv = document.createElement("div");
     imageDiv.classList.add("img");
@@ -15,12 +15,11 @@ function tratamentoDeDados(data) {
 
     // Configure o conteúdo do elemento div
     imageDiv.innerHTML = `
-        <img src="${element.images[0]}" alt="">
-        <div class="name">${element.brand}</div>
-        <div class="name">${element.category}</div>
-        <div class="name">${element.title}</div>
-        <div class="name">Preços: ${element.price}</div>
-       <button type="button" class="btn btn-secondary">Comprar</button>
+     
+        <img src="${element.image}" alt="">
+        <div class="name">${element.name}</div>
+        <a href="${element.link}"><button type="button" class="btn btn-secondary">Comprar</button></a>
+   
      
     `;
 

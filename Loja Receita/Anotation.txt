@@ -1,0 +1,36 @@
+/* const url = "https://dummyjson.com/products";
+const div = document.createElement("div");
+
+fetch(url, { method: "get" })
+  .then((result) => result.json())
+  .then((data) => tratamentoDeDados(data));
+
+//função
+
+
+function tratamentoDeDados(data) {
+  data.products.forEach((element) => {
+
+
+    console.log(data)
+
+
+    div.innerHTML +=
+    `
+        <img src="${element.images[0]}" alt="">
+
+        <div class="img"> ${element.description}</div>
+
+        <div> ${element.price}</div>
+
+        
+        
+        `;
+  });
+}
+
+document.body.appendChild(div);
+
+
+
+ */

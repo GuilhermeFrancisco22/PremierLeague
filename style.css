@@ -19,15 +19,22 @@ header {
 }
 /* Efeito Parallax nas imagens de fundo */
 .hero {
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  margin: 0;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  padding: 0;
+
 }
 /* Animação de fundo gradiente no header */
 .hero {
   background: linear-gradient(to bottom, #ff6600, #f72b2bf8);
   animation: gradientBackground 1s alternate infinite;
+  
 }
 
 @keyframes gradientBackground {
