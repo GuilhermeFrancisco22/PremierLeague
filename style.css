@@ -48,7 +48,7 @@ header {
 
 /*definindo uma animação para meu texto h1*/
 .hero h1 {
-  animation: fadeIn 10s ease-in;
+  animation: fadeIn 5s ease-in;
 }
 
 /*definindo configuração para meu paragrafo*/
@@ -56,12 +56,12 @@ header {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(255, 171, 92);
   font-style: italic;
-  animation: fadeIn 15s ease-in;
+  animation: fadeIn 6s ease-in;
 }
 
 /*definindo uma animação para meu texto h2*/
 .container h2 {
-  animation: fadeIn 10s ease-in;
+  animation: fadeIn 6s ease-in;
   color: rgb(255, 123, 0);
 }
 
@@ -124,7 +124,7 @@ section {
   transition: transform 0.3s ease-in-out;
   border-radius: 20px;
   border: 3px solid #ff6600;
-  animation: fadeIn 6s ease-in;
+  animation: fadeIn 2s ease-in;
 }
 .img:hover {
   transform: scale(1.12);
